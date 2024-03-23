@@ -32,12 +32,22 @@ export default function TravelPlan() {
   const planetIds = root.childIds
 
   const handleComplete = (parentId, childId) => {
+    console.log('parentId,childId :>> ', parentId, childId)
     const parent = plan[parentId]
     const nextParent = {
       ...parent,
       childIds: parent.childIds.filter((id) => id !== childId)
     }
-    setPlans({ ...plan, [parentId]: nextParent })
+    let nextData = { [parentId]: nextParent }
+    if (nextParent.childIds.length <= 0) {
+      const val = Object.values(plan)
+      const deletePlan = val.find((v) => v.childIds.includes(parentId))
+      if (deletePlan) {
+        const childIds = deletePlan.childIds.filter((d) => d !== parentId)
+        nextData = { [deletePlan.id]: { ...deletePlan, childIds } }
+      }
+    }
+    setPlans({ ...plan, ...nextData })
   }
 
   return (
