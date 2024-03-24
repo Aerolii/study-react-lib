@@ -4,8 +4,10 @@ import RequestTracker from './components/RequestTracker'
 import UserForm from './components/UserForm'
 import ContextSection from './components/context/ContextSection'
 import DragBox from './components/drag-box/DragBox'
+import Messenger from './components/state/ContactList'
 import CreateTravelPlan from './components/state/CreateTravelPlan'
 import ItemsSelected from './components/state/ItemsSelected'
+import MailClient from './components/state/MailClient'
 import TravelPlan from './components/state/TravelPlan'
 
 function SearchBar() {
@@ -109,6 +111,10 @@ export default function App() {
       <TravelPlan />
       <br />
       <CreateTravelPlan />
+      <hr />
+      <MailClient />
+      <hr />
+      <Messenger />
     </>
   )
 }
