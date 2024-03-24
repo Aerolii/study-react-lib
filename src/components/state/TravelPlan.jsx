@@ -39,14 +39,15 @@ export default function TravelPlan() {
       childIds: parent.childIds.filter((id) => id !== childId)
     }
     let nextData = { [parentId]: nextParent }
-    if (nextParent.childIds.length <= 0) {
-      const val = Object.values(plan)
-      const deletePlan = val.find((v) => v.childIds.includes(parentId))
-      if (deletePlan) {
-        const childIds = deletePlan.childIds.filter((d) => d !== parentId)
-        nextData = { [deletePlan.id]: { ...deletePlan, childIds } }
-      }
-    }
+    // if (nextParent.childIds.length <= 0) {
+    //   const val = Object.values(plan)
+    //   const deletePlan = val.find((v) => v.childIds.includes(parentId))
+    //   if (deletePlan) {
+    //     const childIds = deletePlan.childIds.filter((d) => d !== parentId)
+    //     nextData = { [deletePlan.id]: { ...deletePlan, childIds } }
+    //   }
+    // }
+    console.log({ ...plan, ...nextData })
     setPlans({ ...plan, ...nextData })
   }
 

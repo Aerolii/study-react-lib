@@ -4,6 +4,7 @@ import RequestTracker from './components/RequestTracker'
 import UserForm from './components/UserForm'
 import ContextSection from './components/context/ContextSection'
 import DragBox from './components/drag-box/DragBox'
+import CreateTravelPlan from './components/state/CreateTravelPlan'
 import ItemsSelected from './components/state/ItemsSelected'
 import TravelPlan from './components/state/TravelPlan'
 
@@ -106,6 +107,8 @@ export default function App() {
       <ItemsSelected />
       <br />
       <TravelPlan />
+      <br />
+      <CreateTravelPlan />
     </>
   )
 }
