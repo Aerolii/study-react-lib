@@ -9,6 +9,7 @@ import CreateTravelPlan from './components/state/CreateTravelPlan'
 import ItemsSelected from './components/state/ItemsSelected'
 import MailClient from './components/state/MailClient'
 import TravelPlan from './components/state/TravelPlan'
+import MessengerReducer from './reducer/MessengerReducer'
 import TaskApp from './reducer/TaskApp'
 
 function SearchBar() {
@@ -118,6 +119,7 @@ export default function App() {
       <Messenger />
       <hr />
       <TaskApp />
+      <MessengerReducer />
     </>
   )
 }
