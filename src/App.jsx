@@ -9,6 +9,7 @@ import CreateTravelPlan from './components/state/CreateTravelPlan'
 import ItemsSelected from './components/state/ItemsSelected'
 import MailClient from './components/state/MailClient'
 import TravelPlan from './components/state/TravelPlan'
+import TaskApp from './reducer/TaskApp'
 
 function SearchBar() {
   return (
@@ -115,6 +116,8 @@ export default function App() {
       <MailClient />
       <hr />
       <Messenger />
+      <hr />
+      <TaskApp />
     </>
   )
 }
