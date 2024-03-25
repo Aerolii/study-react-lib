@@ -14,6 +14,7 @@ import ContextApp from './context/ContextApp'
 import MessengerReducer from './reducer/MessengerReducer'
 import TaskApp from './reducer/TaskApp'
 import RefDOM from './ref/RefDom'
+import RefMapList from './ref/RefMapList'
 import RefScrollIntoView from './ref/RefScrollIntoView'
 
 function SearchBar() {
@@ -132,6 +133,8 @@ export default function App() {
       <RefDOM />
       <hr />
       <RefScrollIntoView />
+      <hr />
+      <RefMapList />
     </>
   )
 }
