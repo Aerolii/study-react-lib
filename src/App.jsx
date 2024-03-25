@@ -9,6 +9,7 @@ import CreateTravelPlan from './components/state/CreateTravelPlan'
 import ItemsSelected from './components/state/ItemsSelected'
 import MailClient from './components/state/MailClient'
 import TravelPlan from './components/state/TravelPlan'
+import ContextApp from './context/ContextApp'
 import MessengerReducer from './reducer/MessengerReducer'
 import TaskApp from './reducer/TaskApp'
 
@@ -120,6 +121,8 @@ export default function App() {
       <hr />
       <TaskApp />
       <MessengerReducer />
+      <hr />
+      <ContextApp />
     </>
   )
 }
