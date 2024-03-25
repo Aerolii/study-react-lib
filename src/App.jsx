@@ -13,6 +13,8 @@ import TravelPlan from './components/state/TravelPlan'
 import ContextApp from './context/ContextApp'
 import MessengerReducer from './reducer/MessengerReducer'
 import TaskApp from './reducer/TaskApp'
+import RefDOM from './ref/RefDom'
+import RefScrollIntoView from './ref/RefScrollIntoView'
 
 function SearchBar() {
   return (
@@ -126,6 +128,10 @@ export default function App() {
       <ContextApp />
       <hr />
       <TasksManager />
+      <hr />
+      <RefDOM />
+      <hr />
+      <RefScrollIntoView />
     </>
   )
 }
