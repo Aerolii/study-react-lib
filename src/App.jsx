@@ -1,6 +1,7 @@
 import './App.css'
 import BucketList from './components/BucketList'
 import RequestTracker from './components/RequestTracker'
+import TasksManager from './components/TasksManager'
 import UserForm from './components/UserForm'
 import ContextSection from './components/context/ContextSection'
 import DragBox from './components/drag-box/DragBox'
@@ -123,6 +124,8 @@ export default function App() {
       <MessengerReducer />
       <hr />
       <ContextApp />
+      <hr />
+      <TasksManager />
     </>
   )
 }

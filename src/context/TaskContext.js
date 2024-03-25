@@ -43,6 +43,6 @@ export default function TasksProvider({ children }) {
   )
 }
 
-export const useTasks = () => {
-  return useContext()
-}
+export const useTasks = () => useContext(TaskContext)
+
+export const useTaskDispatch = () => useContext(TaskDispatchContext)
