@@ -54,7 +54,11 @@ export default function MailClient() {
       <h2>Inbox</h2>
       <ul>
         {letters.map((letter) => (
-          <Letter letter={letter} onSelectLetter={handleSelectLetter} />
+          <Letter
+            key={letter.id}
+            letter={letter}
+            onSelectLetter={handleSelectLetter}
+          />
         ))}
       </ul>
       <p>
