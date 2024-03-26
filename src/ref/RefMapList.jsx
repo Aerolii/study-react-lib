@@ -21,6 +21,7 @@ export default function RefMapList() {
     })
   }
 
+  // 首次执行时，设置 ref 列表
   function getMap() {
     if (!itemsRef.current) {
       itemsRef.current = new Map()
