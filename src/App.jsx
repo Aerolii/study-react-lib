@@ -15,6 +15,7 @@ import MessengerReducer from './reducer/MessengerReducer'
 import TaskApp from './reducer/TaskApp'
 import RefDOM from './ref/RefDom'
 import RefForward from './ref/RefForward'
+import RefHandle from './ref/RefHandle'
 import RefMapList from './ref/RefMapList'
 import RefScrollIntoView from './ref/RefScrollIntoView'
 
@@ -138,6 +139,8 @@ export default function App() {
       <RefMapList />
       <hr />
       <RefForward />
+      <hr />
+      <RefHandle />
     </>
   )
 }
