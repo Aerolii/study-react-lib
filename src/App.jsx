@@ -13,6 +13,7 @@ import TravelPlan from './components/state/TravelPlan'
 import ContextApp from './context/ContextApp'
 import MessengerReducer from './reducer/MessengerReducer'
 import TaskApp from './reducer/TaskApp'
+import CatFriends from './ref/CatFriends'
 import FlushSyncUpdateState from './ref/FlushSyncUpdateState'
 import RefDOM from './ref/RefDom'
 import RefForward from './ref/RefForward'
@@ -144,6 +145,8 @@ export default function App() {
       <RefHandle />
       <hr />
       <FlushSyncUpdateState />
+      <hr />
+      <CatFriends />
     </>
   )
 }

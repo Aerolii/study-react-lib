@@ -7,3 +7,30 @@ label {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+.box-ul-row{
+  overflow:hidden
+}
+
+.ul-row,.li-row{
+  list-style: none;
+  white-space: nowrap;
+}
+
+.ul-row {
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  overflow: scroll;
+}
+
+.li-row-item{
+  display: inline;
+
+}
+
+
+.active {
+  background: rgba(0, 100, 150, 0.4);
+  transition: background 300ms linear;
+}
+
