@@ -12,6 +12,7 @@ import MailClient from './components/state/MailClient'
 import TravelPlan from './components/state/TravelPlan'
 import ContextApp from './context/ContextApp'
 import EffectTodosFunction from './effect/EffctTodosFunction'
+import EffectChangeForm from './effect/EffectChangeForm'
 import EffectCleanFunction from './effect/EffectCleanFunction'
 import EffectFormInputFocus from './effect/EffectFormInputFocus'
 import EffectFormInputFocusByProp from './effect/EffectFormInputFocusByProp'
@@ -168,6 +169,8 @@ export default function App() {
       <EffectTodos />
       <hr />
       <EffectTodosFunction />
+      <hr />
+      <EffectChangeForm />
     </>
   )
 }
