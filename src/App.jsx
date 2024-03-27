@@ -15,6 +15,8 @@ import EffectCleanFunction from './effect/EffectCleanFunction'
 import EffectFormInputFocus from './effect/EffectFormInputFocus'
 import EffectFormInputFocusByProp from './effect/EffectFormInputFocusByProp'
 import EffectPlayground from './effect/EffectPlayground'
+import EffectTodos from './effect/EffectTodos'
+import EventHandleFetch from './effect/EventHandleFetch'
 import MessengerReducer from './reducer/MessengerReducer'
 import TaskApp from './reducer/TaskApp'
 import CatFriends from './ref/CatFriends'
@@ -159,6 +161,10 @@ export default function App() {
       <EffectFormInputFocusByProp />
       <hr />
       <EffectCleanFunction />
+      <hr />
+      <EventHandleFetch />
+      <hr />
+      <EffectTodos />
     </>
   )
 }
