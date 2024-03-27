@@ -11,6 +11,7 @@ import ItemsSelected from './components/state/ItemsSelected'
 import MailClient from './components/state/MailClient'
 import TravelPlan from './components/state/TravelPlan'
 import ContextApp from './context/ContextApp'
+import EffectTodosFunction from './effect/EffctTodosFunction'
 import EffectCleanFunction from './effect/EffectCleanFunction'
 import EffectFormInputFocus from './effect/EffectFormInputFocus'
 import EffectFormInputFocusByProp from './effect/EffectFormInputFocusByProp'
@@ -165,6 +166,8 @@ export default function App() {
       <EventHandleFetch />
       <hr />
       <EffectTodos />
+      <hr />
+      <EffectTodosFunction />
     </>
   )
 }
