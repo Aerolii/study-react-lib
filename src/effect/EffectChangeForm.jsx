@@ -22,6 +22,7 @@ export default function EffectChangeForm() {
         contact={contacts[selectId]}
         onReset={() => {
           setContacts(initialContacts)
+          console.log('1 :>> ', 1)
         }}
         onSave={handleSaveContact}
       />
@@ -30,7 +31,8 @@ export default function EffectChangeForm() {
 }
 
 function ContactEditForm({ contact, onSave, onReset }) {
-  const [user, setUser] = useState(contact)
+  const [user, setUser] = useState({ ...contact })
+
   return (
     <>
       <label>
@@ -52,7 +54,7 @@ function ContactEditForm({ contact, onSave, onReset }) {
       </label>
 
       <button onClick={() => onSave(user)}>保存</button>
-      <button onClick={onReset}>重置</button>
+      <button onClick={() => setUser(contact)}>重置</button>
     </>
   )
 }
