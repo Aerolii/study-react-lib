@@ -11,6 +11,8 @@ import ItemsSelected from './components/state/ItemsSelected'
 import MailClient from './components/state/MailClient'
 import TravelPlan from './components/state/TravelPlan'
 import ContextApp from './context/ContextApp'
+import EffectFormInputFocus from './effect/EffectFormInputFocus'
+import EffectPlayground from './effect/EffectPlayground'
 import MessengerReducer from './reducer/MessengerReducer'
 import TaskApp from './reducer/TaskApp'
 import CatFriends from './ref/CatFriends'
@@ -147,6 +149,10 @@ export default function App() {
       <FlushSyncUpdateState />
       <hr />
       <CatFriends />
+      <hr />
+      <EffectPlayground />
+      <hr />
+      <EffectFormInputFocus />
     </>
   )
 }
