@@ -11,7 +11,9 @@ import ItemsSelected from './components/state/ItemsSelected'
 import MailClient from './components/state/MailClient'
 import TravelPlan from './components/state/TravelPlan'
 import ContextApp from './context/ContextApp'
+import EffectCleanFunction from './effect/EffectCleanFunction'
 import EffectFormInputFocus from './effect/EffectFormInputFocus'
+import EffectFormInputFocusByProp from './effect/EffectFormInputFocusByProp'
 import EffectPlayground from './effect/EffectPlayground'
 import MessengerReducer from './reducer/MessengerReducer'
 import TaskApp from './reducer/TaskApp'
@@ -153,6 +155,10 @@ export default function App() {
       <EffectPlayground />
       <hr />
       <EffectFormInputFocus />
+      <hr />
+      <EffectFormInputFocusByProp />
+      <hr />
+      <EffectCleanFunction />
     </>
   )
 }
