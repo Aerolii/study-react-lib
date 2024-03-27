@@ -6,6 +6,8 @@ export default function EffectChangeForm() {
   const [contacts, setContacts] = useState(initialContacts)
   const [selectId, setSelectId] = useState(initialContacts[0].id)
 
+  const selectedContact = contacts.find((c) => c.id === selectId)
+
   function handleSaveContact(contact) {
     setContacts(contacts.map((c) => (c.id === contact.id ? contact : c)))
   }
@@ -19,18 +21,14 @@ export default function EffectChangeForm() {
       />
       <ContactEditForm
         key={selectId}
-        contact={contacts[selectId]}
-        onReset={() => {
-          setContacts(initialContacts)
-          console.log('1 :>> ', 1)
-        }}
+        contact={selectedContact}
         onSave={handleSaveContact}
       />
     </>
   )
 }
 
-function ContactEditForm({ contact, onSave, onReset }) {
+function ContactEditForm({ contact, onSave }) {
   const [user, setUser] = useState({ ...contact })
 
   return (
