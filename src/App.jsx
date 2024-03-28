@@ -17,6 +17,8 @@ import EffectCleanFunction from './effect/EffectCleanFunction'
 import EffectFormInputFocus from './effect/EffectFormInputFocus'
 import EffectFormInputFocusByProp from './effect/EffectFormInputFocusByProp'
 import EffectPlayground from './effect/EffectPlayground'
+import EffectTimer from './effect/EffectTimer'
+import EffectTimerWithRef from './effect/EffectTimerWithRef'
 import EffectTodos from './effect/EffectTodos'
 import EventHandleFetch from './effect/EventHandleFetch'
 import MessengerReducer from './reducer/MessengerReducer'
@@ -171,6 +173,10 @@ export default function App() {
       <EffectTodosFunction />
       <hr />
       <EffectChangeForm />
+      <hr />
+      <EffectTimer />
+      <hr />
+      <EffectTimerWithRef />
     </>
   )
 }
