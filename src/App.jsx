@@ -22,6 +22,8 @@ import EffectTimer from './effect/EffectTimer'
 import EffectTimerWithRef from './effect/EffectTimerWithRef'
 import EffectTodos from './effect/EffectTodos'
 import EventHandleFetch from './effect/EventHandleFetch'
+import EffectNetwork from './hook/EffectNetwork'
+import EffectUseFadeIn from './hook/EffectUseFadeIn'
 import MessengerReducer from './reducer/MessengerReducer'
 import TaskApp from './reducer/TaskApp'
 import CatFriends from './ref/CatFriends'
@@ -180,6 +182,10 @@ export default function App() {
       <EffectTimerWithRef />
       <hr />
       <EffectAnimationFadeIn />
+      <hr />
+      <EffectNetwork />
+      <hr />
+      <EffectUseFadeIn />
     </>
   )
 }
