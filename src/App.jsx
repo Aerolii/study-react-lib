@@ -12,6 +12,7 @@ import MailClient from './components/state/MailClient'
 import TravelPlan from './components/state/TravelPlan'
 import ContextApp from './context/ContextApp'
 import EffectTodosFunction from './effect/EffctTodosFunction'
+import EffectAnimationFadeIn from './effect/EffectAnimationFadeIn'
 import EffectChangeForm from './effect/EffectChangeForm'
 import EffectCleanFunction from './effect/EffectCleanFunction'
 import EffectFormInputFocus from './effect/EffectFormInputFocus'
@@ -177,6 +178,8 @@ export default function App() {
       <EffectTimer />
       <hr />
       <EffectTimerWithRef />
+      <hr />
+      <EffectAnimationFadeIn />
     </>
   )
 }
