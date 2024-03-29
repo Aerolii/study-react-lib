@@ -28,6 +28,7 @@ import EffectCounterHook, {
   EffectCounterHookCharge
 } from './hook/EffectCounterHook'
 import EffectNetwork from './hook/EffectNetwork'
+import EffectPointerPosition from './hook/EffectPointerPosotion'
 import EffectUseFadeIn from './hook/EffectUseFadeIn'
 import MessengerReducer from './reducer/MessengerReducer'
 import TaskApp from './reducer/TaskApp'
@@ -199,6 +200,8 @@ export default function App() {
       <EffectCounterHook />
       <hr />
       <EffectCounterHookCharge />
+      <hr />
+      <EffectPointerPosition />
     </>
   )
 }
