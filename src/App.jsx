@@ -24,7 +24,9 @@ import EffectTodos from './effect/EffectTodos'
 import EventHandleFetch from './effect/EventHandleFetch'
 import EffectAnimationFadeInUseHook from './hook/EffectAnimationFadeInUseHook'
 import EffectCounter from './hook/EffectCounter'
-import EffectCounterHook from './hook/EffectCounterHook'
+import EffectCounterHook, {
+  EffectCounterHookCharge
+} from './hook/EffectCounterHook'
 import EffectNetwork from './hook/EffectNetwork'
 import EffectUseFadeIn from './hook/EffectUseFadeIn'
 import MessengerReducer from './reducer/MessengerReducer'
@@ -195,6 +197,8 @@ export default function App() {
       <EffectCounter />
       <hr />
       <EffectCounterHook />
+      <hr />
+      <EffectCounterHookCharge />
     </>
   )
 }
